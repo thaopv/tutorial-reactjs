@@ -1,8 +1,10 @@
+var path = require('path');
+
 var config = {
-	entry: './main.js',
+	entry: './src/main.js',
 
 	output: {
-		path:'./',
+		path: path.resolve(__dirname, 'build'),
 		filename: 'index.js',
 	},
 
