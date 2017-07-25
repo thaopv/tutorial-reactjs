@@ -6,7 +6,7 @@
   "author": "thaopv <pvthaoit@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --hot"
   },
   "dependencies": {
     "react": "^15.6.1",

@@ -2,15 +2,15 @@ var path = require('path');
 
 var config = {
 	entry: './src/main.js',
-
+	context: __dirname,
 	output: {
-		path: path.resolve(__dirname, 'public'),
+		path: path.join(__dirname, 'public'),
 		filename: 'index.js',
 	},
 
 	devServer: {
 		inline: true,
-		port: 8080
+		port: 9000
 	},
 
 	module: {
@@ -18,7 +18,7 @@ var config = {
 			{
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
-				loader: 'babel',
+				loader: 'babel-loader',
 
 				query: {
 					presets: ['es2015', 'react']
