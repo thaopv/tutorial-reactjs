@@ -5,7 +5,6 @@ Use [YARN][yarn] to manage package
 
 # Usage
 Install [YARN][yarn]
-```bash
 
 Open command-line in project:
 * Install package:
