@@ -1,0 +1,26 @@
+html, body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: monospace;
+}
+
+.todo {
+	width: 100%;
+}
+
+.todo__header {
+	text-align: center;
+	width: 100%;
+}
+
+.todo__content--input {
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+.common__input {
+	padding: 5px;
+	margin: 0 5px;
+	outline: none;
+}
