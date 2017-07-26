@@ -13,8 +13,9 @@ class TodoInput extends Component {
 	}
 
 	addTodo(event) {
-		console.log(this.state.todo);
 		event.preventDefault();
+
+		this.props.onAddingToto(this.state.todo);
 	}
 
 	handleChange(event) {

@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
 
 class TodoList extends Component {
+	renderTodoItem() {
+		return this.props.todos.map(todo => <div key={todo}>{todo}</div>);
+	}
+
 	render() {
 		return (
-			<div>This is list todo</div>
+			<div className="todo__content--list">
+				{this.renderTodoItem()}
+			</div>
 		);
 	}
 }
